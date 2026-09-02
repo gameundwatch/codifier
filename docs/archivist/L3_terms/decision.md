@@ -5,7 +5,7 @@
 - Aliases: 決断, DECISION
 - Details:
   - 互いに素である。同じことを二枚が言わない。参照関係を持つことはこれを妨げない。
-  - 粒度・種別・参照を属性として持つ。
+  - 粒度と参照を属性として持つ。種別は持たない。
   - コードには無い。選んだ案と捨てた案の対で成立し、捨てた案は履歴が持つ。
   - 重複したときは先発へ統合される。覆ったときは打ち消し線で消し、全て覆れば削除される。
 
@@ -14,3 +14,4 @@
 - [決断はコードに無く、履歴にある](../L4_decisions/decisions-not-in-code.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
 - [覆った内容は打ち消し線で消す](../L4_decisions/overturned-is-struck-through.md)
+- [決断は種別を持たない](../L4_decisions/no-kind-attribute.md)

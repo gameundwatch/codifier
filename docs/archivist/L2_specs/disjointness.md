@@ -23,13 +23,6 @@
 - 後発を参照していた決断の grounds を書き換える
 - 繋ぎ直しの結果、先発の粒度が上がることがある
 
-<a id="R4"></a>
-
-### R4 種別は二つだけとする
-
-- 覆しにくい決定と、揃えるための取り決め
-- 定義を三つ目の種別として置かない
-
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -37,7 +30,6 @@
 | 1 | [重複の検出](#V1) | [R1](#R1) |
 | 2 | [先発が残る](#V2) | [R2](#R2) |
 | 3 | [参照の繋ぎ直し](#V3) | [R3](#R3) |
-| 4 | [種別の数](#V4) | [R4](#R4) |
 
 <a id="V1"></a>
 
@@ -60,28 +52,18 @@
 - Means: checklist
 - 後発を参照していた決断の grounds が先発を指すよう書き換わっていることを見る
 
-<a id="V4"></a>
-
-### V4 種別の数
-
-- Means: checklist
-- 語の定めを含む決断を与え、種別が取り決めになり、定義という種別が現れないことを見る
-
 ## Decisions
 - [決断は互いに素である](../L4_decisions/decisions-are-disjoint.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
-- [定義は決断の種別にしない](../L4_decisions/definition-is-not-a-kind.md)
 
 ## References
 
 ### Structures
 
 - [decision-removal](../L3_structures/decision-removal.md)
-- [decision-attributes](../L3_structures/decision-attributes.md)
 
 ### Terms
 
 - [merge](../L3_terms/merge.md)
-- [kind](../L3_terms/kind.md)
 - [statement](../L3_terms/statement.md)
 - [grounds](../L3_terms/grounds.md)
