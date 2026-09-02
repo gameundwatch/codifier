@@ -23,6 +23,13 @@
 - エスカレーションが起きてもファイルは移動しない
 - 粒度は記載内容と参照の数から読む
 
+<a id="R4"></a>
+
+### R4 書き込む主体を一つに限る
+
+- 内容を決める側はファイルに触れない
+- 出力の規則を守る箇所が一箇所に収まる
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -32,6 +39,7 @@
 | 3 | [上書きの回避](#V3) | [R2](#R2) |
 | 4 | [配置が平坦](#V4) | [R3](#R3) |
 | 5 | [昇格で動かない](#V5) | [R3](#R3) |
+| 6 | [書き込みの一点](#V6) | [R4](#R4) |
 
 <a id="V1"></a>
 
@@ -68,7 +76,15 @@
 - Means: checklist
 - エスカレーションを起こし、対象ファイルのパスが変わらないことを見る
 
+<a id="V6"></a>
+
+### V6 書き込みの一点
+
+- Means: checklist
+- 実行中にファイルを書き換える箇所を数え、一つだけであることを見る
+
 ## Decisions
+- [ファイルへの書き込みは一本に集約する](../L4_decisions/single-writer.md)
 - [出力先は固定する](../L4_decisions/output-path-is-fixed.md)
 - [出力は一列に並べる](../L4_decisions/flat-output-layout.md)
 
@@ -77,6 +93,7 @@
 ### Structures
 
 - [output-layout](../L3_structures/output-layout.md)
+- [writing-path](../L3_structures/writing-path.md)
 - [configurable-surface](../L3_structures/configurable-surface.md)
 
 ### Terms
