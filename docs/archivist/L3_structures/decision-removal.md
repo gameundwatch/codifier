@@ -41,10 +41,26 @@ flowchart LR
 先発の被参照数が増えるため、統合がエスカレーションを引き起こすことがある。
 後発優先にすると繋ぎ直しが両方向に生じるため、向きを先発に固定している。
 
+<a id="D3"></a>
+
+### D3 削除の波及
+
+```mermaid
+flowchart LR
+    A[決断A] -->|grounds の一行| B[決断B]
+    B --> X[全て覆った → 削除]
+    X -.->|その一行だけ消す| A2[決断A は残る]
+```
+
+削除された決断を根拠にしていた側は、根拠欄からその一行を失う。
+消えるのは一行であって、参照していた決断そのものは覆らない。
+波及はここで止まり、連鎖して他の決断が削除されることはない。
+
 ## Decisions
 - [覆った内容は打ち消し線で消す](../L4_decisions/overturned-is-struck-through.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
 - [決断は互いに素である](../L4_decisions/decisions-are-disjoint.md)
+- [削除された決断への参照は連携して消す](../L4_decisions/cascade-delete-references.md)
 
 ## References
 
@@ -58,3 +74,4 @@ flowchart LR
 - [merge](../L3_terms/merge.md)
 - [decision](../L3_terms/decision.md)
 - [reference](../L3_terms/reference.md)
+- [grounds](../L3_terms/grounds.md)
