@@ -25,23 +25,24 @@ N と M は利用者が決める閾値で、既定値を持つが規則ではな
 ```mermaid
 flowchart TD
     subgraph P[principle]
-        pa[a. 決断事項]
-        pb[b. 理由 複数行]
-        pz[z. 根拠]
+        pa[statement]
+        pb[rationale 複数行]
+        pz[grounds]
     end
     subgraph C[convention]
-        ca[a. 決断事項]
-        cb[b. 理由 単一行]
-        cz[z. 根拠]
+        ca[statement]
+        cb[rationale 単一行]
+        cz[grounds]
     end
     subgraph H[choice]
-        ha[a. 決断事項]
-        hz[z. 根拠]
+        ha[statement]
+        hz[grounds]
     end
 ```
 
-粒度が上がるほど欄が増える。増えるのは理由だけで、決断事項と根拠は三段に共通する。
-choice に理由の欄が無いのは、誰も拠って立っていない決断に説明責任が生じないため。
+粒度が上がるほど欄が増える。増えるのは rationale だけで、statement と grounds は
+三段に共通する。
+choice に rationale が無いのは、誰も拠って立っていない決断に説明責任が生じないため。
 不可逆であることと合わせると、欄は増える方向にしか変わらない。
 
 ## Decisions
@@ -60,3 +61,6 @@ choice に理由の欄が無いのは、誰も拠って立っていない決断�
 - [convention](../L3_terms/convention.md)
 - [principle](../L3_terms/principle.md)
 - [escalation](../L3_terms/escalation.md)
+- [statement](../L3_terms/statement.md)
+- [rationale](../L3_terms/rationale.md)
+- [grounds](../L3_terms/grounds.md)
