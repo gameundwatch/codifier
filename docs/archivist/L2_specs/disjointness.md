@@ -14,6 +14,7 @@
 ### R2 重複を検出したら先発へ統合する
 
 - 先に置かれた側を残し、後発を消す
+- 先発は索引の timecode 列で判定する
 - 後発だけが持っていた grounds は先発へ移す
 
 <a id="R3"></a>
@@ -55,6 +56,7 @@
 ## Decisions
 - [決断は互いに素である](../L4_decisions/decisions-are-disjoint.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
+- [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 
 ## References
 

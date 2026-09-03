@@ -36,6 +36,7 @@
 ### R5 閾値は利用者が決める
 
 - choice から convention、convention から principle の二つを設定できる
+- 設定は `docs/codifier/config.json` に置く
 - 設定が無いときは既定値で動く
 
 ## Verify
@@ -91,6 +92,7 @@
 - [粒度が上がるほど記載内容が増える](../L4_decisions/content-grows-with-granularity.md)
 - [エスカレーションは不可逆とする](../L4_decisions/escalation-is-irreversible.md)
 - [エスカレーションの閾値は利用者が決める](../L4_decisions/thresholds-are-configurable.md)
+- [設定は `docs/codifier/config.json` に置く](../L4_decisions/config-in-output-dir.md)
 
 ## References
 

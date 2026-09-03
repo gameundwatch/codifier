@@ -9,7 +9,7 @@
 ```mermaid
 flowchart TD
     U[利用者]
-    U -->|決められる| T[エスカレーションの閾値]
+    U -->|決められる| T["エスカレーションの閾値<br/>docs/codifier/config.json"]
     U -.->|決められない| O[出力先 docs/codifier/]
 ```
 
@@ -20,6 +20,7 @@ flowchart TD
 
 ## Decisions
 - [出力先は固定する](../L4_decisions/output-path-is-fixed.md)
+- [設定は `docs/codifier/config.json` に置く](../L4_decisions/config-in-output-dir.md)
 - [エスカレーションの閾値は利用者が決める](../L4_decisions/thresholds-are-configurable.md)
 
 ## References

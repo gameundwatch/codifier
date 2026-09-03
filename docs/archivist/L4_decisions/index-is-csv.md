@@ -1,7 +1,8 @@
 # 索引は CSV で持つ
 
-`docs/codifier/` に索引を一枚置き、全決断の path・statement・granularity・grounds を
-CSV で持つ。
+`docs/codifier/` に索引を一枚置き、全決断を CSV で持つ。
+
+~~列は path・statement・granularity・grounds の四つとする。~~
 
 決断を一件足すたびに全ファイルを読むと、件数が増えたところで読み切れなくなる。
 索引が一枚あれば、重複の検出も粒度の算出も循環の検査も、一度の読みで済む。

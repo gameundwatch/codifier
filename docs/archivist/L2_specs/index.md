@@ -6,7 +6,7 @@
 
 ### R1 索引を CSV 一枚として `docs/codifier/` に置く
 
-- 列は path・statement・granularity・grounds の四つ
+- 列は path・statement・granularity・grounds・timecode の五つ
 - 入次数を列に持たない
 - 値は常に引用符で囲み、内側の引用符は二重にする
 
@@ -70,6 +70,7 @@
 
 ## Decisions
 - [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
+- [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
 - [ファイルへの書き込みは一本に集約する](../L4_decisions/single-writer.md)
 
