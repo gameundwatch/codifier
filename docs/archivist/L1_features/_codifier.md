@@ -40,9 +40,9 @@
 
 ### Features
 
-- [codifier-collect](../L1_features/_codifier-collect.md)
-- [codifier-disjoint](../L1_features/_codifier-disjoint.md)
-- [codifier-graph](../L1_features/_codifier-graph.md)
+- [codifier-collect](../L1_features/codifier-collect.md)
+- [codifier-disjoint](../L1_features/codifier-disjoint.md)
+- [codifier-graph](../L1_features/codifier-graph.md)
 - [codifier-escalate](../L1_features/_codifier-escalate.md)
 
 ### Specs

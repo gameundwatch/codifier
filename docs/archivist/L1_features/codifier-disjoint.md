@@ -35,4 +35,4 @@
 
 ### Designs
 
-- [codifier-disjoint](../L2_designs/_codifier-disjoint.md)
+- [codifier-disjoint](../L2_designs/codifier-disjoint.md)
