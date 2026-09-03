@@ -35,7 +35,6 @@ flowchart LR
 
 ### Structures
 
-- [skill-composition](../L3_structures/skill-composition.md)
 - [output-layout](../L3_structures/output-layout.md)
 
 ### Terms

@@ -20,7 +20,8 @@
 
 ### R3 粒度ごとに記載する欄が変わる
 
-- choice は statement と grounds を持ち、rationale を持たない
+- 三段すべてが statement・timecode・grounds を持つ
+- choice は rationale を持たない
 - convention は rationale を単一行で持つ
 - principle は rationale を複数行で持つ
 
@@ -68,8 +69,8 @@
 ### V3 欄の増減
 
 - Means: checklist
-- 三段それぞれの決断を出力させ、choice に rationale が無く、convention が単一行、
-  principle が複数行であることを見る
+- 三段それぞれの決断を出力させ、statement・timecode・grounds が三段すべてに在り、
+  choice に rationale が無く、convention が単一行、principle が複数行であることを見る
 
 <a id="V4"></a>
 
@@ -88,6 +89,7 @@
 
 ## Decisions
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
+- [決断は発効時刻を欄として持つ](../L4_decisions/decision-holds-timecode.md)
 - [粒度は choice / convention / principle の三段とする](../L4_decisions/three-granularities.md)
 - [粒度が上がるほど記載内容が増える](../L4_decisions/content-grows-with-granularity.md)
 - [エスカレーションは不可逆とする](../L4_decisions/escalation-is-irreversible.md)
@@ -107,3 +109,4 @@
 - [statement](../L3_terms/statement.md)
 - [rationale](../L3_terms/rationale.md)
 - [grounds](../L3_terms/grounds.md)
+- [timecode](../L3_terms/timecode.md)

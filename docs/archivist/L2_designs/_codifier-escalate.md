@@ -6,7 +6,7 @@
 | ---- | ----- |
 | [R1](../L2_specs/granularity.md#R1) | 索引の grounds 列を横断して入次数を数える集計 |
 | [R2](../L2_specs/granularity.md#R2) | 入次数を三段のいずれかへ写す対応 |
-| [R3](../L2_specs/granularity.md#R3) | 段が上がったとき rationale の欄を足す指示 |
+| [R3](../L2_specs/granularity.md#R3) | 段が上がったとき rationale の欄を足す指示。他の欄は触らない |
 | [R4](../L2_specs/granularity.md#R4) | 現在の粒度と算出値を比べ、大きい側を採る比較 |
 | [R5](../L2_specs/granularity.md#R5) | `config.json` の読み出しと、欠けたときの既定値 |
 

@@ -17,6 +17,7 @@ flowchart LR
 ```
 
 五列すべてが決断ファイルから導かれる。索引そのものは何も決めない。
+索引を消しても、決断ファイルが揃っていれば同じ索引が戻る。
 granularity だけは一枚では出ず、全ファイルの grounds を数えて決まる。
 入次数を列に持たないのは、grounds 列から数えられるため。
 列が増減すれば、この図に行が増減する。
@@ -40,6 +41,7 @@ flowchart LR
 ## Decisions
 - [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
 - [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
+- [決断は発効時刻を欄として持つ](../L4_decisions/decision-holds-timecode.md)
 - [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
 
@@ -51,3 +53,4 @@ flowchart LR
 - [statement](../L3_terms/statement.md)
 - [grounds](../L3_terms/grounds.md)
 - [granularity](../L3_terms/granularity.md)
+- [timecode](../L3_terms/timecode.md)
