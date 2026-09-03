@@ -26,6 +26,7 @@ flowchart LR
 
 ## Decisions
 - [ファイルへの書き込みは一本に集約する](../L4_decisions/single-writer.md)
+- [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 - [出力先は固定する](../L4_decisions/output-path-is-fixed.md)
 - [出力は一列に並べる](../L4_decisions/flat-output-layout.md)
 - [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
@@ -34,6 +35,7 @@ flowchart LR
 
 ### Structures
 
+- [skill-composition](../L3_structures/skill-composition.md)
 - [output-layout](../L3_structures/output-layout.md)
 
 ### Terms
