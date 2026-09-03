@@ -14,7 +14,7 @@
 
 | target_name | target_file | IN | OUT |
 | ----------- | ----------- | -- | --- |
-| codifier-escalate | skills/codifier-escalate/SKILL.md | 索引, 設定 | 粒度の変更と欄の追加の指示 |
+| codifier-escalate | skills/codifier-escalate/SKILL.md | 索引, 確定した集合, 設定 | 粒度の変更と欄の追加の指示 |
 | 閾値の設定 | docs/codifier/config.json | - | - |
 
 ### Relation

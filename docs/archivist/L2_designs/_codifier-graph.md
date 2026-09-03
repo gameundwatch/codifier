@@ -14,7 +14,7 @@
 
 | target_name | target_file | IN | OUT |
 | ----------- | ----------- | -- | --- |
-| codifier-graph | skills/codifier-graph/SKILL.md | 索引 | 検査結果, 近傍図, 削除と打ち消しの指示 |
+| codifier-graph | skills/codifier-graph/SKILL.md | 索引, 確定した集合 | 検査結果, 近傍図, 削除と打ち消しの指示 |
 
 ### Relation
 ```mermaid
