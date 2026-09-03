@@ -5,7 +5,8 @@
 - Aliases: 索引, INDEX
 - Details:
   - 列は path・statement・granularity・grounds・timecode の五つ。入次数は grounds 列を数えて得る。
-  - timecode は決断が発効した時刻。重複を統合するときの先発の判定に使う。
+  - timecode は徴候が成立したコミットの時刻。決断ファイルを書いた時刻ではない。
+  - timecode は重複を統合するときの先発の判定に使う。
   - 生成物であり、実行のたびに作り直す。手で編集しない。
   - 重複の検出、粒度の算出、循環の検査はここを読んで行う。
 

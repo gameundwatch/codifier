@@ -8,12 +8,13 @@
 | [R2](../L2_specs/collection.md#R2) | 四つの徴候それぞれの判定手続き |
 | [R3](../L2_specs/collection.md#R3) | 拾わなかったものと理由を戻り値に残す形 |
 | [R4](../L2_specs/collection.md#R4) | 走査範囲を最初に確定させる問いと、件数の先出し |
+| [R5](../L2_specs/collection.md#R5) | 徴候が成立したコミットを特定し、その時刻を取り出す |
 
 ## Parts
 
 | target_name | target_file | IN | OUT |
 | ----------- | ----------- | -- | --- |
-| codifier-collect | skills/codifier-collect/SKILL.md | 走査範囲, コード, コミット履歴 | 決断の候補と除外一覧 |
+| codifier-collect | skills/codifier-collect/SKILL.md | 走査範囲, コード, コミット履歴 | 決断の候補（発効時刻つき）と除外一覧 |
 
 ### Relation
 ```mermaid
@@ -21,7 +22,8 @@ flowchart LR
     A[範囲を確定] --> B[件数を先に言う]
     B --> C[コードと履歴を走査]
     C --> D{徴候を持つか}
-    D -->|持つ| E[候補に入れる]
+    D -->|持つ| T[成立したコミットの時刻を取る]
+    T --> E[候補に入れる]
     D -->|持たない| F[除外一覧に理由を残す]
 ```
 
@@ -35,6 +37,9 @@ flowchart LR
 - コードだけを入力にしない
     - 履歴を読まずに決断を立てない
     - 由来: [決断はコードに無く、履歴にある](../L4_decisions/decisions-not-in-code.md)
+- 発効時刻は履歴から取る
+    - 実行時刻を使わない。二度走らせても同じ値になる
+    - 由来: [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - ファイルに書かない
     - 候補を返すだけで、`docs/codifier/` に触れない
     - 由来: [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
@@ -42,6 +47,7 @@ flowchart LR
 ## Decisions
 - [徴候から自発的に収集する](../L4_decisions/collect-without-asking.md)
 - [決断はコードに無く、履歴にある](../L4_decisions/decisions-not-in-code.md)
+- [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 - [スキルは仕事ごとに四つに割る](../L4_decisions/skill-per-job.md)
 
@@ -60,3 +66,4 @@ flowchart LR
 
 - [sign](../L3_terms/sign.md)
 - [decision](../L3_terms/decision.md)
+- [index](../L3_terms/index.md)

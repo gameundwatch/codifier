@@ -34,6 +34,9 @@ flowchart LR
 - 四本はファイルに触れない
     - 戻り値は書く内容であって、書き込みではない
     - 由来: [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
+- timecode は打たずに受け取る
+    - 収集が返した発効時刻をそのまま索引へ載せる。書き込み時刻を使わない
+    - 由来: [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - 生成物は毎回作り直す
     - 索引と近傍図は実行の末尾でまとめて再生成する
     - 由来: [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
@@ -48,6 +51,7 @@ flowchart LR
 - [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 - [ファイルへの書き込みは一本に集約する](../L4_decisions/single-writer.md)
 - [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
+- [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
 - [出力先は固定する](../L4_decisions/output-path-is-fixed.md)
 - [出力は一列に並べる](../L4_decisions/flat-output-layout.md)
