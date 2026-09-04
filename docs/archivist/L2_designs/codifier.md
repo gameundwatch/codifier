@@ -19,7 +19,6 @@
 | ----------- | ----------- | -- | --- |
 | codifier | skills/codifier/SKILL.md | 四本の戻り値 | docs/codifier/ |
 | 決断の書式 | skills/codifier/TEMPLATE.md | - | 決断ファイル |
-| 索引 | docs/codifier/index.csv | 決断ファイル群 | - |
 
 ### Relation
 ```mermaid
@@ -41,7 +40,9 @@ flowchart LR
     - 由来: [決断は発効時刻を欄として持つ](../L4_decisions/decision-holds-timecode.md)
     - 由来: [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - 生成物は毎回作り直す
-    - 索引と近傍図は実行の末尾でまとめて再生成する
+    - `docs/codifier/index.csv` と各決断の近傍図を、実行の末尾でまとめて再生成する
+    - 生成物は Parts に挙げない。実在を印の条件にしないため
+    - 由来: [Parts に自動生成物を挙げない](../L4_decisions/parts-exclude-generated.md)
     - 由来: [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
 - 人が書いた決断本文は上書きしない
     - 同名があれば報告して止める
@@ -59,6 +60,7 @@ flowchart LR
 - [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
 - [出力先は固定する](../L4_decisions/output-path-is-fixed.md)
 - [出力は一列に並べる](../L4_decisions/flat-output-layout.md)
+- [Parts に自動生成物を挙げない](../L4_decisions/parts-exclude-generated.md)
 
 ## References
 

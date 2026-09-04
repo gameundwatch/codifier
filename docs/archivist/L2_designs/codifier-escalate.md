@@ -15,7 +15,6 @@
 | target_name | target_file | IN | OUT |
 | ----------- | ----------- | -- | --- |
 | codifier-escalate | skills/codifier-escalate/SKILL.md | 索引, 確定した集合, 設定 | 粒度の変更と欄の追加の指示 |
-| 閾値の設定 | docs/codifier/config.json | - | - |
 
 ### Relation
 ```mermaid
@@ -41,6 +40,7 @@ flowchart LR
     - 由来: [エスカレーションの閾値は利用者が決める](../L4_decisions/thresholds-are-configurable.md)
 - 設定は出力先の中から読む
     - `docs/codifier/config.json` 以外の場所を探さない
+    - 利用者が置くファイルなので Parts に挙げない。無いときは既定値で動く
     - 由来: [設定は `docs/codifier/config.json` に置く](../L4_decisions/config-in-output-dir.md)
 - ファイルを移動させない
     - 段が上がっても、欄を足すだけでパスを変えない
@@ -56,6 +56,7 @@ flowchart LR
 - [エスカレーションは不可逆とする](../L4_decisions/escalation-is-irreversible.md)
 - [エスカレーションの閾値は利用者が決める](../L4_decisions/thresholds-are-configurable.md)
 - [設定は `docs/codifier/config.json` に置く](../L4_decisions/config-in-output-dir.md)
+- [Parts に自動生成物を挙げない](../L4_decisions/parts-exclude-generated.md)
 - [出力は一列に並べる](../L4_decisions/flat-output-layout.md)
 - [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 
@@ -63,7 +64,7 @@ flowchart LR
 
 ### Designs
 
-- [codifier](../L2_designs/_codifier.md)
+- [codifier](../L2_designs/codifier.md)
 
 ### Structures
 

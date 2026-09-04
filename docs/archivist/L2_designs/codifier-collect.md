@@ -55,7 +55,7 @@ flowchart LR
 
 ### Designs
 
-- [codifier](../L2_designs/_codifier.md)
+- [codifier](../L2_designs/codifier.md)
 
 ### Structures
 

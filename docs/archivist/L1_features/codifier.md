@@ -43,7 +43,7 @@
 - [codifier-collect](../L1_features/codifier-collect.md)
 - [codifier-disjoint](../L1_features/codifier-disjoint.md)
 - [codifier-graph](../L1_features/codifier-graph.md)
-- [codifier-escalate](../L1_features/_codifier-escalate.md)
+- [codifier-escalate](../L1_features/codifier-escalate.md)
 
 ### Specs
 
@@ -52,4 +52,4 @@
 
 ### Designs
 
-- [codifier](../L2_designs/_codifier.md)
+- [codifier](../L2_designs/codifier.md)
