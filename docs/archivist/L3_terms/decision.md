@@ -8,12 +8,13 @@
   - 粒度と参照を属性として持つ。種別は持たない。
   - 一枚ごとに自分の近傍図を持つ。全決断の一覧は索引が持つ。
   - statement・timecode・grounds を粒度によらず持ち、粒度に応じて rationale を加える。
-  - コードには無い。選んだ案と捨てた案の対で成立し、捨てた案は履歴が持つ。
+  - 捨てた案を要するものは、選んだ案と捨てた案の対で成立し、捨てた案は履歴が持つ。
+  - definition のように、捨てた案を持たずに成立するものもある。
   - 重複したときは先発へ統合される。覆ったときは打ち消し線で消し、全て覆れば削除される。
 
 ## Decisions
 - [決断は互いに素である](../L4_decisions/decisions-are-disjoint.md)
-- [決断はコードに無く、履歴にある](../L4_decisions/decisions-not-in-code.md)
+- [捨てた案は履歴にしかない](../L4_decisions/decisions-not-in-code.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
 - [覆った内容は打ち消し線で消す](../L4_decisions/overturned-is-struck-through.md)
 - [決断は種別を持たない](../L4_decisions/no-kind-attribute.md)

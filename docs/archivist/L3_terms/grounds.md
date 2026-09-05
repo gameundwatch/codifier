@@ -15,6 +15,6 @@
 
 ## Decisions
 - [参照はグラフであり、循環しない](../L4_decisions/references-form-a-dag.md)
-- [決断はコードに無く、履歴にある](../L4_decisions/decisions-not-in-code.md)
+- [捨てた案は履歴にしかない](../L4_decisions/decisions-not-in-code.md)
 - [粒度が上がるほど記載内容が増える](../L4_decisions/content-grows-with-granularity.md)
 - [削除された決断への参照は連携して消す](../L4_decisions/cascade-delete-references.md)
