@@ -10,7 +10,7 @@ Granularity is counted, not declared. **Return instructions; never write.**
 ## What to read
 
 `docs/codifier/index.csv`, and `docs/codifier/config.json` when it exists.
-Count the `grounds` column: a article's in-degree is how many rows name it.
+Count the `grounds` column: an article's in-degree is how many rows name it.
 
 ## The three steps
 

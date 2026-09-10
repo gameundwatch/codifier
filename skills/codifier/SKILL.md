@@ -7,7 +7,7 @@ description: Collect the articles already settled in a codebase and write them t
 
 Call the four, then write. **The four never touch a file. This one does.**
 
-Read `TEMPLATE.md` in this directory for the form a article takes.
+Read `TEMPLATE.md` in this directory for the form an article takes.
 
 ## Input
 
@@ -34,7 +34,7 @@ fixed; do not accept a replacement for it.
 
 - One article per file, all in one flat directory. No subdirectory per granularity
 - A file name never carries the granularity - escalation must not move a file
-- A article file a person wrote is never overwritten. On a name collision, report
+- An article file a person wrote is never overwritten. On a name collision, report
   and stop
 - `index.csv` and the neighbourhood diagrams are generated. Rewrite them whole on
   every run
@@ -56,7 +56,7 @@ Rebuild it from the article files alone. Deleting it must lose nothing.
 ## Timecode
 
 Take what `codifier-collect` returns and write it into the article file. **Never
-stamp the time of writing.** The value is the time the sign settled, and running
+stamp the time of writing.** The value is the time the article settled, and running
 the same range twice must produce the same value.
 
 ## Configuration
@@ -67,7 +67,7 @@ When it is absent, use the defaults - a default is a starting point, not a rule.
 ## Stopping
 
 On reaching something the articles do not settle, stop without writing it and say
-what is missing. Filling that gap is a article, and articles are not made here.
+what is missing. Filling that gap is an article, and articles are not made here.
 
 ## Language
 

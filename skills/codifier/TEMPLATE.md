@@ -16,7 +16,7 @@
 - Granularity: choice | convention | principle
 
 <!--
-    Timecode is when the sign settled - the commit's time, not the time this
+    Timecode is when the article settled - the commit's time, not the time this
     file was written. Granularity is derived from how many other articles cite
     this one; it is never chosen by hand, and it never goes down.
 -->
@@ -43,7 +43,7 @@ RATIONALE
 
 ### Implementation
 
-<!-- The commits and files the sign was read from -->
+<!-- The commits and files the article was read from -->
 
 - COMMIT_SHA — WHAT_IT_SHOWS
 - FILE_PATH

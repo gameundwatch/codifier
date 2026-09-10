@@ -1,6 +1,6 @@
 ---
 name: codifier-collect
-description: Read a codebase and its history and raise the articles already settled there, through two entries - signs in the history and definitions in the code. Use when articles have to be recovered from what a project has already done.
+description: Read a codebase and its history and raise the articles already settled there, through two entries - decisions from the history and definitions from the code. Use when articles have to be recovered from what a project has already done.
 ---
 
 # codifier-collect
@@ -11,15 +11,16 @@ Raise what is already settled. **Return it; never write it.**
 
 There are two, and they are not merged.
 
-| Entry | Read from | Sieve | Discarded option |
-| --- | --- | --- | --- |
-| sign | history | one of the four signs | held |
-| definition | code | named from outside the defining scope | none |
+| Entry | Raises | Read from | Sieve | Discarded option |
+| --- | --- | --- | --- | --- |
+| history | decision | commits and diffs | one of the four signs | held |
+| code | definition | definitions and their namings | named from outside the defining scope | none |
 
-A article needing a discarded option cannot be recovered from code alone - code
-keeps only the option that was taken. But a definition is the act of binding a
-name to a thing, and that act is itself the article. It needs no reason, so it
-needs no evidence, and it does not stand as a fifth sign.
+Both are articles. A decision needs a discarded option and cannot be recovered
+from code alone - code keeps only the option that was taken. A definition is the
+act of binding a name to a thing, and that act is itself the article. It needs no
+reason, so it needs no evidence, and it does not stand as a fifth sign. A sign is
+the sieve on the history entry; it does not bear on definitions.
 
 ## Scope first
 
@@ -90,15 +91,15 @@ presence of a sign or of a naming from outside, nothing else.
 Every candidate carries a commit's time, **never the time of this run**.
 Collecting the same range on a different day must produce the same value.
 
-- sign entry: the last commit that completed the pattern
-- definition entry: the commit where it was first named from outside
+- history entry: the last commit that completed the pattern
+- code entry: the commit where it was first named from outside
 
 ## What comes back
 
 - the candidates, each with a statement, a timecode, and the commits it was read
   from
-- the counts, **split by entry** - how many from history, how many from
-  definitions. Never a single combined number
+- the counts, **split by entry** - how many decisions, how many definitions.
+  Never a single combined number
 - what was passed over, each with which sign it lacked, or that nothing named it
 
 The last list is not optional. A silent omission cannot be argued with.
