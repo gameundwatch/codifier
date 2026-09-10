@@ -41,7 +41,7 @@ flowchart TD
 徴候は履歴から判定する。四つで、いずれか一つを持てば決まっているものとして集める。
 四つとも持たないものは拾わない。これが人への問い合わせを置き換える篩にあたる。
 徴候は四つのままとし、増やさない。定義はこの列に並ばず、第二の入口として立つ。
-定義の入口の篩は [collection-definition](../L3_structures/collection-definition.md) が持つ。
+定義の入口の篩はこの図に無く、別の構造が持つ。
 
 ## Decisions
 - [集める単位は条項とし、decision と definition に分ける](../L4_decisions/article-is-the-collected-unit.md)
@@ -50,10 +50,6 @@ flowchart TD
 - [定義は徴候ではなく、第二の入口とする](../L4_decisions/definition-is-the-second-entry.md)
 
 ## References
-
-### Structures
-
-- [collection-definition](../L3_structures/collection-definition.md)
 
 ### Terms
 

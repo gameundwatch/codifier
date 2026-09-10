@@ -26,6 +26,19 @@
     - 同名があれば報告して止まる
 - 出力先は変更できない
 
+## Coverage
+
+| spec | design |
+| ---- | ------ |
+| [output R1](../L2_specs/output.md#R1) | [T1](../L2_designs/codifier.md#T1) |
+| [output R2](../L2_specs/output.md#R2) | [T2](../L2_designs/codifier.md#T2) |
+| [output R3](../L2_specs/output.md#R3) | [T3](../L2_designs/codifier.md#T3) |
+| [output R4](../L2_specs/output.md#R4) | [T4](../L2_designs/codifier.md#T4) |
+| [index R1](../L2_specs/index.md#R1) | [T5](../L2_designs/codifier.md#T5) |
+| [index R3](../L2_specs/index.md#R3) | [T6](../L2_designs/codifier.md#T6) |
+| [index R2](../L2_specs/index.md#R2) | [T7](../L2_designs/codifier.md#T7) |
+| [index R4](../L2_specs/index.md#R4) | [T8](../L2_designs/codifier.md#T8) |
+
 ## Decisions
 - [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 - [スキルは仕事ごとに四つに割る](../L4_decisions/skill-per-job.md)

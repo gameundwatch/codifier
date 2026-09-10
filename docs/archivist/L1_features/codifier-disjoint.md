@@ -21,6 +21,14 @@
 - 後発を指していた根拠が先発へ繋ぎ直される
     - 先発の被参照数が増え、昇格の対象になることがある
 
+## Coverage
+
+| spec | design |
+| ---- | ------ |
+| [R1](../L2_specs/disjointness.md#R1) | [T1](../L2_designs/codifier-disjoint.md#T1) |
+| [R2](../L2_specs/disjointness.md#R2) | [T2](../L2_designs/codifier-disjoint.md#T2) |
+| [R3](../L2_specs/disjointness.md#R3) | [T3](../L2_designs/codifier-disjoint.md#T3) |
+
 ## Decisions
 - [条項は互いに素である](../L4_decisions/articles-are-disjoint.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)

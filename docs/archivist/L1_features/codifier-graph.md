@@ -24,6 +24,16 @@
 - 粒度の順序で参照が制限されない
     - choice が principle を直接指す形は拒否されない
 
+## Coverage
+
+| spec | design |
+| ---- | ------ |
+| [R1](../L2_specs/graph-maintenance.md#R1) | [T1](../L2_designs/codifier-graph.md#T1) |
+| [R2](../L2_specs/graph-maintenance.md#R2) | [T2](../L2_designs/codifier-graph.md#T2) |
+| [R3](../L2_specs/graph-maintenance.md#R3) | [T3](../L2_designs/codifier-graph.md#T3) |
+| [R4](../L2_specs/graph-maintenance.md#R4) | [T4](../L2_designs/codifier-graph.md#T4) |
+| [R5](../L2_specs/graph-maintenance.md#R5) | [T5](../L2_designs/codifier-graph.md#T5) |
+
 ## Decisions
 - [参照はグラフであり、循環しない](../L4_decisions/references-form-a-dag.md)
 - [覆った内容は打ち消し線で消す](../L4_decisions/overturned-is-struck-through.md)

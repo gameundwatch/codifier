@@ -22,6 +22,16 @@
     - 参照元が消えて被参照数が減っても、一度上がった段と理由は残る
 - 粒度が変わってもファイルは移動しない
 
+## Coverage
+
+| spec | design |
+| ---- | ------ |
+| [R1](../L2_specs/granularity.md#R1) | [T1](../L2_designs/codifier-escalate.md#T1) |
+| [R2](../L2_specs/granularity.md#R2) | [T2](../L2_designs/codifier-escalate.md#T2) |
+| [R3](../L2_specs/granularity.md#R3) | [T3](../L2_designs/codifier-escalate.md#T3) |
+| [R4](../L2_specs/granularity.md#R4) | [T4](../L2_designs/codifier-escalate.md#T4) |
+| [R5](../L2_specs/granularity.md#R5) | [T5](../L2_designs/codifier-escalate.md#T5) |
+
 ## Decisions
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
 - [粒度は choice / convention / principle の三段とする](../L4_decisions/three-granularities.md)

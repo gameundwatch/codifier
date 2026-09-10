@@ -43,6 +43,20 @@
 - 公開識別子が改名されると、その命名の条項は覆りとして扱われる
     - 確定事項の名前が黙って書き換わることはない
 
+## Coverage
+
+| spec | design |
+| ---- | ------ |
+| [R1](../L2_specs/collection.md#R1) | [T1](../L2_designs/codifier-collect.md#T1) |
+| [R2](../L2_specs/collection.md#R2) | [T2](../L2_designs/codifier-collect.md#T2) |
+| [R3](../L2_specs/collection.md#R3) | [T3](../L2_designs/codifier-collect.md#T3) |
+| [R4](../L2_specs/collection.md#R4) | [T4](../L2_designs/codifier-collect.md#T4) |
+| [R5](../L2_specs/collection.md#R5) | [T5](../L2_designs/codifier-collect.md#T5) |
+| [R6](../L2_specs/collection.md#R6) | [T6](../L2_designs/codifier-collect.md#T6) |
+| [R7](../L2_specs/collection.md#R7) | [T7](../L2_designs/codifier-collect.md#T7) |
+| [R8](../L2_specs/collection.md#R8) | [T8](../L2_designs/codifier-collect.md#T8) |
+| [R9](../L2_specs/collection.md#R9) | [T9](../L2_designs/codifier-collect.md#T9) |
+
 ## Decisions
 - [集める単位は条項とし、decision と definition に分ける](../L4_decisions/article-is-the-collected-unit.md)
 - [徴候から自発的に収集する](../L4_decisions/collect-without-asking.md)

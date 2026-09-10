@@ -1,14 +1,41 @@
 # codifier-escalate — 昇格の設計
 
-## Needs
+## Tasks
 
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/granularity.md#R1) | 索引の grounds 列を横断して入次数を数える集計 |
-| [R2](../L2_specs/granularity.md#R2) | 入次数を三段のいずれかへ写す対応 |
-| [R3](../L2_specs/granularity.md#R3) | 段が上がったとき rationale の欄を足す指示。他の欄は触らない |
-| [R4](../L2_specs/granularity.md#R4) | 現在の粒度と算出値を比べ、大きい側を採る比較 |
-| [R5](../L2_specs/granularity.md#R5) | `config.json` の読み出しと、欠けたときの既定値 |
+<a id="T1"></a>
+
+### T1 索引の grounds 列を横断して入次数を数える
+
+- Means: checklist
+- 同じ条項を grounds に挙げる行を複数置き、その条項の入次数がその件数に一致することを見る
+
+<a id="T2"></a>
+
+### T2 入次数を三段のいずれかへ写す
+
+- Means: checklist
+- 閾値の前後の入次数を与え、choice / convention / principle の境で段が切り替わることを見る
+
+<a id="T3"></a>
+
+### T3 段が上がったとき rationale の欄だけを足す
+
+- Means: checklist
+- 段が上がる条項を与え、rationale が足され、他の欄が変わらないことを見る
+
+<a id="T4"></a>
+
+### T4 現在の粒度と算出値を比べ、大きい側を採る
+
+- Means: checklist
+- 算出値が現在より小さい条項を与え、粒度が下がらないことを見る
+
+<a id="T5"></a>
+
+### T5 `config.json` を読み、欠けたときは既定値を使う
+
+- Means: checklist
+- 閾値を書いた config.json がある場合と無い場合の両方で呼び、前者が優先され後者が既定値で動くことを見る
 
 ## Parts
 

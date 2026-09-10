@@ -1,14 +1,41 @@
 # codifier-graph — グラフ保守の設計
 
-## Needs
+## Tasks
 
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/graph-maintenance.md#R1) | 索引の grounds 列から辺を組み、循環を探す走査 |
-| [R2](../L2_specs/graph-maintenance.md#R2) | 粒度による参照可否の判定を持たないこと |
-| [R3](../L2_specs/graph-maintenance.md#R3) | 覆った箇所の打ち消しと、全て覆ったときの削除指示 |
-| [R4](../L2_specs/graph-maintenance.md#R4) | 削除対象を指す grounds の行を特定する検索 |
-| [R5](../L2_specs/graph-maintenance.md#R5) | 出る辺を三ホップ、入る辺を一ホップ辿る抽出 |
+<a id="T1"></a>
+
+### T1 索引の grounds 列から辺を組み、循環を探す
+
+- Means: checklist
+- 循環する grounds を含む索引を与え、循環が報告されることを見る
+
+<a id="T2"></a>
+
+### T2 粒度による参照可否の判定を持たない
+
+- Means: checklist
+- 下の段が上の段を参照する行を与え、それが違反として報告されないことを見る
+
+<a id="T3"></a>
+
+### T3 覆った箇所を打ち消し、全て覆ったときに削除を指示する
+
+- Means: checklist
+- 一部が覆った条項と全て覆った条項を与え、前者は行が残り、後者にファイル削除の指示が付くことを見る
+
+<a id="T4"></a>
+
+### T4 削除対象を指す grounds の行を特定する
+
+- Means: checklist
+- 削除される条項を grounds に挙げる行を置き、その行が特定されることを見る
+
+<a id="T5"></a>
+
+### T5 出る辺を三ホップ、入る辺を一ホップ辿って抽出する
+
+- Means: checklist
+- 四ホップ先まで繋がるグラフを与え、出る側が三ホップで止まり、入る側が一ホップで止まることを見る
 
 ## Parts
 

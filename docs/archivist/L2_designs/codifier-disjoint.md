@@ -1,12 +1,29 @@
 # codifier-disjoint — 互いに素の検査の設計
 
-## Needs
+## Tasks
 
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/disjointness.md#R1) | 索引の statement 列どうしを意味で突き合わせる比較。参照関係は重複と見なさない |
-| [R2](../L2_specs/disjointness.md#R2) | timecode 列の小さい側を先発と決める規則と、後発の grounds を先発へ移す手順 |
-| [R3](../L2_specs/disjointness.md#R3) | 後発を指す grounds を索引から探し、先発へ差し替える指示の組み立て |
+<a id="T1"></a>
+
+### T1 statement 列どうしを意味で突き合わせる
+
+- Means: checklist
+- 同じ意味の statement を持つ二行と、一方が他方を grounds に挙げる二行を索引に与え、
+  前者だけが組として出ることを見る
+
+<a id="T2"></a>
+
+### T2 timecode の小さい側を残し、後発の grounds を移す
+
+- Means: checklist
+- timecode の異なる重複二行を与え、小さい側が残り、後発だけが持っていた grounds が
+  残った側に付くことを見る
+
+<a id="T3"></a>
+
+### T3 後発を指す grounds を索引から探し、差し替えを組み立てる
+
+- Means: checklist
+- 後発を grounds に挙げる第三の行を置き、返る指示にその行の差し替えが現れることを見る
 
 ## Parts
 
