@@ -56,5 +56,5 @@ output と index はどの仕事にも属さず、書き込みに従う制約で
 
 ### Terms
 
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [index](../L3_terms/index.md)

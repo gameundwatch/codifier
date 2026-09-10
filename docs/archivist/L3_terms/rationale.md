@@ -1,6 +1,6 @@
 # rationale — 理由
 
-その決断に至った理由を述べる欄。
+その条項に至った理由を述べる欄。
 
 - Aliases: 理由, RATIONALE
 - Details:

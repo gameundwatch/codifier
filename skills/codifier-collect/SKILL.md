@@ -1,6 +1,6 @@
 ---
 name: codifier-collect
-description: Read a codebase and its history and raise the decisions already settled there, through two entries - signs in the history and definitions in the code. Use when decisions have to be recovered from what a project has already done.
+description: Read a codebase and its history and raise the articles already settled there, through two entries - signs in the history and definitions in the code. Use when articles have to be recovered from what a project has already done.
 ---
 
 # codifier-collect
@@ -16,9 +16,9 @@ There are two, and they are not merged.
 | sign | history | one of the four signs | held |
 | definition | code | named from outside the defining scope | none |
 
-A decision needing a discarded option cannot be recovered from code alone - code
+A article needing a discarded option cannot be recovered from code alone - code
 keeps only the option that was taken. But a definition is the act of binding a
-name to a thing, and that act is itself the decision. It needs no reason, so it
+name to a thing, and that act is itself the article. It needs no reason, so it
 needs no evidence, and it does not stand as a fifth sign.
 
 ## Scope first
@@ -73,9 +73,9 @@ more references, and granularity already holds that.
 
 ## Renaming
 
-A public identifier renamed after its naming decision was raised is an overturn.
+A public identifier renamed after its naming article was raised is an overturn.
 Return it as one. **Never quietly rewrite the statement of an existing naming
-decision** - rewriting loses the discarded option, and with it the fact that a
+article** - rewriting loses the discarded option, and with it the fact that a
 rename happened at all. Past rename commits belong in the `Implementation` list
 under `Grounds`, and never raise granularity to earn a rationale field.
 

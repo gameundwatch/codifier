@@ -11,9 +11,9 @@ flowchart LR
     A[書く内容を決める側] --> W[書き込み]
     B[書く内容を決める側] --> W
     C[書く内容を決める側] --> W
-    W --> O["決断ファイル"]
+    W --> O["条項ファイル"]
     W --> X[(索引 CSV)]
-    W --> Y[各決断の近傍図]
+    W --> Y[各条項の近傍図]
     A -.->|不可| O
     B -.->|不可| O
     C -.->|不可| O
@@ -39,6 +39,6 @@ flowchart LR
 
 ### Terms
 
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [index](../L3_terms/index.md)
 - [neighborhood](../L3_terms/neighborhood.md)

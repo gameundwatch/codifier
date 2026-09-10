@@ -1,6 +1,6 @@
 ---
 name: codifier-graph
-description: Check the reference graph for cycles, work out what an overturned decision takes with it, and build each decision's neighbourhood diagram. Use before writing, and after anything is removed.
+description: Check the reference graph for cycles, work out what an overturned article takes with it, and build each article's neighbourhood diagram. Use before writing, and after anything is removed.
 ---
 
 # codifier-graph
@@ -10,11 +10,11 @@ Keep the graph readable and acyclic. **Return findings and diagrams; never write
 ## What to read
 
 `docs/codifier/index.csv`, and the settled set handed in. Build the edges from the
-`grounds` column: an edge runs from the citing decision to the one it rests on.
+`grounds` column: an edge runs from the citing article to the one it rests on.
 
 ## Cycles
 
-A cycle leaves no way to say which decision is the original. Report it and let the
+A cycle leaves no way to say which article is the original. Report it and let the
 run stop. Nothing is written while one stands.
 
 ## Layers are not enforced
@@ -31,12 +31,12 @@ graph is a graph, not a ladder.
   sits among the live ones and reads as one of them
 
 When a file goes, find the `grounds` entries that name it and drop those lines.
-**One line each, and it ends there.** The decisions that cited it are not overturned
+**One line each, and it ends there.** The articles that cited it are not overturned
 and are not deleted - a deletion that cascaded would take the whole graph with it.
 
 ## Neighbourhood
 
-One diagram per decision, held in that decision's own file. There is no diagram of
+One diagram per article, held in that article's own file. There is no diagram of
 the whole graph anywhere.
 
 ```
@@ -53,7 +53,7 @@ do not vary the depth by granularity.
 
 - cycles, if any
 - the lines to strike, the files to delete, the grounds entries to drop
-- a neighbourhood diagram per decision
+- a neighbourhood diagram per article
 
 ## Language
 

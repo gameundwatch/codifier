@@ -55,21 +55,21 @@
 ### V1 粒度の再現性
 
 - Means: checklist
-- 同じ決断群を二度処理し、各ファイルの粒度が一致することを見る
+- 同じ条項群を二度処理し、各ファイルの粒度が一致することを見る
 
 <a id="V2"></a>
 
 ### V2 段の数
 
 - Means: checklist
-- 出力された決断の粒度が三種のいずれかに収まることを見る
+- 出力された条項の粒度が三種のいずれかに収まることを見る
 
 <a id="V3"></a>
 
 ### V3 欄の増減
 
 - Means: checklist
-- 三段それぞれの決断を出力させ、statement・timecode・grounds が三段すべてに在り、
+- 三段それぞれの条項を出力させ、statement・timecode・grounds が三段すべてに在り、
   choice に rationale が無く、convention が単一行、principle が複数行であることを見る
 
 <a id="V4"></a>
@@ -77,7 +77,7 @@
 ### V4 降格しない
 
 - Means: checklist
-- principle を参照していた決断を削除し、被参照数が閾値を割った後も
+- principle を参照していた条項を削除し、被参照数が閾値を割った後も
   粒度と rationale が残ることを見る
 
 <a id="V5"></a>
@@ -89,7 +89,7 @@
 
 ## Decisions
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
-- [決断は発効時刻を欄として持つ](../L4_decisions/decision-holds-timecode.md)
+- [条項は発効時刻を欄として持つ](../L4_decisions/article-holds-timecode.md)
 - [粒度は choice / convention / principle の三段とする](../L4_decisions/three-granularities.md)
 - [粒度が上がるほど記載内容が増える](../L4_decisions/content-grows-with-granularity.md)
 - [エスカレーションは不可逆とする](../L4_decisions/escalation-is-irreversible.md)

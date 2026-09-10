@@ -1,6 +1,6 @@
 # granularity — 粒度
 
-決断が他の決断からどれだけ拠って立たれているかを表す段階。
+条項が他の条項からどれだけ拠って立たれているかを表す段階。
 
 - Aliases: 粒度, GRANULARITY
 - Details:
@@ -10,7 +10,7 @@
   - 上がることはあっても下がらない。
 
 ## Terms
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [reference](../L3_terms/reference.md)
 
 ## Decisions

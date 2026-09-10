@@ -28,14 +28,14 @@ flowchart LR
 
 ## Rules
 - 索引だけを読む
-    - 決断ファイルを全件開かない
+    - 条項ファイルを全件開かない
     - 由来: [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
 - 粒度で参照を制限しない
     - choice が principle を直接指す形を拒否しない
     - 由来: [参照はグラフであり、循環しない](../L4_decisions/references-form-a-dag.md)
 - 波及は一行で止める
-    - 削除された決断を指す行だけを消し、参照元は覆さない
-    - 由来: [削除された決断への参照は連携して消す](../L4_decisions/cascade-delete-references.md)
+    - 削除された条項を指す行だけを消し、参照元は覆さない
+    - 由来: [削除された条項への参照は連携して消す](../L4_decisions/cascade-delete-references.md)
 - ホップ数を粒度で変えない
     - 三段のどれでも出三ホップ・入一ホップとする
     - 由来: [近傍図は出る辺を三ホップ、入る辺を一ホップとする](../L4_decisions/hop-limit-asymmetric.md)
@@ -46,9 +46,9 @@ flowchart LR
 ## Decisions
 - [参照はグラフであり、循環しない](../L4_decisions/references-form-a-dag.md)
 - [覆った内容は打ち消し線で消す](../L4_decisions/overturned-is-struck-through.md)
-- [削除された決断への参照は連携して消す](../L4_decisions/cascade-delete-references.md)
+- [削除された条項への参照は連携して消す](../L4_decisions/cascade-delete-references.md)
 - [近傍図は出る辺を三ホップ、入る辺を一ホップとする](../L4_decisions/hop-limit-asymmetric.md)
-- [近傍の参照図は各決断が持つ](../L4_decisions/local-graph-in-each-decision.md)
+- [近傍の参照図は各条項が持つ](../L4_decisions/local-graph-in-each-article.md)
 - [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
 - [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 
@@ -62,7 +62,7 @@ flowchart LR
 
 - [reference-graph](../L3_structures/reference-graph.md)
 - [neighborhood-graph](../L3_structures/neighborhood-graph.md)
-- [decision-removal](../L3_structures/decision-removal.md)
+- [article-removal](../L3_structures/article-removal.md)
 
 ### Terms
 

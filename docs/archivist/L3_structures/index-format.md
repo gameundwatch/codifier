@@ -8,7 +8,7 @@
 
 ```mermaid
 flowchart LR
-    F["決断ファイル"] --> P[path]
+    F["条項ファイル"] --> P[path]
     F --> S[statement]
     F --> G[grounds]
     F --> T[timecode]
@@ -16,8 +16,8 @@ flowchart LR
     P & S & G & T & N --> C[(索引 CSV)]
 ```
 
-五列すべてが決断ファイルから導かれる。索引そのものは何も決めない。
-索引を消しても、決断ファイルが揃っていれば同じ索引が戻る。
+五列すべてが条項ファイルから導かれる。索引そのものは何も決めない。
+索引を消しても、条項ファイルが揃っていれば同じ索引が戻る。
 granularity だけは一枚では出ず、全ファイルの grounds を数えて決まる。
 入次数を列に持たないのは、grounds 列から数えられるため。
 列が増減すれば、この図に行が増減する。
@@ -35,13 +35,13 @@ flowchart LR
     C --> U5[先発の判定]
 ```
 
-全決断を横断する処理は索引だけを読む。決断ファイルを全件開かない。
+全条項を横断する処理は索引だけを読む。条項ファイルを全件開かない。
 索引が古いと四つすべてが誤るため、実行のたびに作り直す。
 
 ## Decisions
 - [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
-- [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
-- [決断は発効時刻を欄として持つ](../L4_decisions/decision-holds-timecode.md)
+- [索引は条項発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
+- [条項は発効時刻を欄として持つ](../L4_decisions/article-holds-timecode.md)
 - [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
 

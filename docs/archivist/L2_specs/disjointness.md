@@ -4,7 +4,7 @@
 
 <a id="R1"></a>
 
-### R1 二枚の決断が同じことを言わない
+### R1 二枚の条項が同じことを言わない
 
 - 判定は statement の内容で行う
 - 参照関係を持つことは重複と見なさない
@@ -21,7 +21,7 @@
 
 ### R3 統合後は参照先を先発へ繋ぎ直す
 
-- 後発を参照していた決断の grounds を書き換える
+- 後発を参照していた条項の grounds を書き換える
 - 繋ぎ直しの結果、先発の粒度が上がることがある
 
 ## Verify
@@ -51,18 +51,18 @@
 ### V3 参照の繋ぎ直し
 
 - Means: checklist
-- 後発を参照していた決断の grounds が先発を指すよう書き換わっていることを見る
+- 後発を参照していた条項の grounds が先発を指すよう書き換わっていることを見る
 
 ## Decisions
-- [決断は互いに素である](../L4_decisions/decisions-are-disjoint.md)
+- [条項は互いに素である](../L4_decisions/articles-are-disjoint.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
-- [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
+- [索引は条項発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 
 ## References
 
 ### Structures
 
-- [decision-removal](../L3_structures/decision-removal.md)
+- [article-removal](../L3_structures/article-removal.md)
 
 ### Terms
 

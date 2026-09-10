@@ -12,7 +12,7 @@
 
 | target_name | target_file | IN | OUT |
 | ----------- | ----------- | -- | --- |
-| codifier-disjoint | skills/codifier-disjoint/SKILL.md | 索引, 新規の決断候補 | 重複の報告, 統合と繋ぎ直しの指示 |
+| codifier-disjoint | skills/codifier-disjoint/SKILL.md | 索引, 新規の条項候補 | 重複の報告, 統合と繋ぎ直しの指示 |
 
 ### Relation
 ```mermaid
@@ -27,14 +27,14 @@ flowchart LR
 
 ## Rules
 - 比較は索引の statement 列だけで行う
-    - 決断ファイルを全件開かない
+    - 条項ファイルを全件開かない
     - 由来: [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
 - 先発は timecode で決める
     - CSV の行順で決めない。行順は作り直しのたびに変わりうる
-    - 由来: [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
+    - 由来: [索引は条項発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - 参照関係を重複と見なさない
     - 一方が他方を根拠にしていることは、同じことを言っている証拠にならない
-    - 由来: [決断は互いに素である](../L4_decisions/decisions-are-disjoint.md)
+    - 由来: [条項は互いに素である](../L4_decisions/articles-are-disjoint.md)
 - 繋ぎ直しは一方向のみ
     - 後発を指していたものを先発へ向ける。逆向きの書き換えを行わない
     - 由来: [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
@@ -43,9 +43,9 @@ flowchart LR
     - 由来: [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 
 ## Decisions
-- [決断は互いに素である](../L4_decisions/decisions-are-disjoint.md)
+- [条項は互いに素である](../L4_decisions/articles-are-disjoint.md)
 - [重複は先発に統合する](../L4_decisions/merge-into-the-earlier.md)
-- [索引は決断発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
+- [索引は条項発効時の timecode を持つ](../L4_decisions/index-holds-timecode.md)
 - [索引は CSV で持つ](../L4_decisions/index-is-csv.md)
 - [書き込みはオーケストレーターが持つ](../L4_decisions/orchestrator-writes.md)
 
@@ -57,7 +57,7 @@ flowchart LR
 
 ### Structures
 
-- [decision-removal](../L3_structures/decision-removal.md)
+- [article-removal](../L3_structures/article-removal.md)
 - [index-format](../L3_structures/index-format.md)
 
 ### Terms

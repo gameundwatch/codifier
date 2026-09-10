@@ -1,6 +1,6 @@
 # neighborhood — 近傍
 
-一つの決断から辿れる範囲のうち、その決断のファイルに図として描かれる部分。
+一つの条項から辿れる範囲のうち、その条項のファイルに図として描かれる部分。
 
 - Aliases: 近傍, NEIGHBORHOOD
 - Details:
@@ -10,9 +10,9 @@
 
 ## Terms
 - [reference](../L3_terms/reference.md)
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 
 ## Decisions
-- [近傍の参照図は各決断が持つ](../L4_decisions/local-graph-in-each-decision.md)
+- [近傍の参照図は各条項が持つ](../L4_decisions/local-graph-in-each-article.md)
 - [近傍図は出る辺を三ホップ、入る辺を一ホップとする](../L4_decisions/hop-limit-asymmetric.md)
 - [生成された箇所は毎回書き直す](../L4_decisions/generated-parts-are-rewritten.md)

@@ -45,7 +45,7 @@ flowchart TD
 
 粒度が上がるほど欄が増える。増えるのは rationale だけで、statement・timecode・grounds は
 三段に共通する。
-choice に rationale が無いのは、誰も拠って立っていない決断に説明責任が生じないため。
+choice に rationale が無いのは、誰も拠って立っていない条項に説明責任が生じないため。
 不可逆であることと合わせると、欄は増える方向にしか変わらない。
 
 ## Decisions
@@ -54,7 +54,7 @@ choice に rationale が無いのは、誰も拠って立っていない決断�
 - [エスカレーションは不可逆とする](../L4_decisions/escalation-is-irreversible.md)
 - [エスカレーションの閾値は利用者が決める](../L4_decisions/thresholds-are-configurable.md)
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
-- [決断は発効時刻を欄として持つ](../L4_decisions/decision-holds-timecode.md)
+- [条項は発効時刻を欄として持つ](../L4_decisions/article-holds-timecode.md)
 
 ## References
 

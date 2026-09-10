@@ -8,15 +8,16 @@
 
 ```mermaid
 flowchart LR
-    H[履歴] -->|捨てた案を持つ| S[sign]
-    C[コード] -->|捨てた案を持たない| F[definition]
-    S --> D[decision]
-    F --> D
+    H[履歴] -->|徴候の篩| D[decision]
+    C[コード] -->|名指しの篩| F[definition]
+    D -->|捨てた案を持つ| A[article]
+    F -->|捨てた案を持たない| A
 ```
 
-入口は二つある。履歴の入口は捨てた案を持ち、定義の入口は持たない。
-捨てた案を要する決断はコード単体からは復元できないが、コードが指している決断の写像は
-書ける。定義のように、捨てた案を持たずに成立する決断があるため。
+入口は二つある。履歴からは decision を、コードからは definition を拾い、どちらも条項になる。
+分かれ目は捨てた案を持つか否かで、入口の別はその結果にすぎない。
+捨てた案を要する条項はコード単体からは復元できないが、コードが指している条項の写像は書ける。
+篩は入口ごとに別で、徴候は履歴側にしか掛からない。
 入口が増減すれば、この図の行が増減する。
 
 <a id="D2"></a>
@@ -43,6 +44,7 @@ flowchart TD
 定義の入口の篩は [collection-definition](../L3_structures/collection-definition.md) が持つ。
 
 ## Decisions
+- [集める単位は条項とし、decision と definition に分ける](../L4_decisions/article-is-the-collected-unit.md)
 - [徴候から自発的に収集する](../L4_decisions/collect-without-asking.md)
 - [捨てた案は履歴にしかない](../L4_decisions/decisions-not-in-code.md)
 - [定義は徴候ではなく、第二の入口とする](../L4_decisions/definition-is-the-second-entry.md)
@@ -58,3 +60,4 @@ flowchart TD
 - [sign](../L3_terms/sign.md)
 - [definition](../L3_terms/definition.md)
 - [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)

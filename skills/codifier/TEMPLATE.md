@@ -8,7 +8,7 @@
 
 <!--
     The title is the statement: one line, what was decided.
-    No two decisions say the same thing here. This line is what duplicate
+    No two articles say the same thing here. This line is what duplicate
     detection compares.
 -->
 
@@ -17,7 +17,7 @@
 
 <!--
     Timecode is when the sign settled - the commit's time, not the time this
-    file was written. Granularity is derived from how many other decisions cite
+    file was written. Granularity is derived from how many other articles cite
     this one; it is never chosen by hand, and it never goes down.
 -->
 
@@ -35,7 +35,7 @@ RATIONALE
 
 ### References
 
-<!-- Decisions this one rests on. These are the outgoing edges. -->
+<!-- Articles this one rests on. These are the outgoing edges. -->
 
 - [STATEMENT_1](./DECISION_FILE_1.md)
 - [STATEMENT_2](./DECISION_FILE_2.md)

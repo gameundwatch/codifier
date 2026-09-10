@@ -1,26 +1,26 @@
 ---
 name: codifier-disjoint
-description: Find decisions that say the same thing and direct the merge into the earlier one. Use when new candidates have to be checked against what is already recorded.
+description: Find articles that say the same thing and direct the merge into the earlier one. Use when new candidates have to be checked against what is already recorded.
 ---
 
 # codifier-disjoint
 
-Two decisions never say the same thing. Find where they do. **Return instructions;
+Two articles never say the same thing. Find where they do. **Return instructions;
 never write.**
 
 ## What to read
 
 `docs/codifier/index.csv` and the candidates handed in. **Only the index.** Do not
-open the decision files one by one - that is what the index exists to prevent.
+open the article files one by one - that is what the index exists to prevent.
 
 ## What counts as duplication
 
-Compare the `statement` column. Two decisions are duplicates when overturning one
+Compare the `statement` column. Two articles are duplicates when overturning one
 would leave the other saying the same thing.
 
-**A reference is not a duplication.** One decision resting on another is evidence
+**A reference is not a duplication.** One article resting on another is evidence
 that they are different, not that they are the same. Raising these merges away the
-decisions that carry grounds.
+articles that carry grounds.
 
 ## Direction of the merge
 
