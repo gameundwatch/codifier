@@ -31,8 +31,10 @@
 | [R3](../L2_specs/granularity.md#R3) | [T3](../L2_designs/codifier-escalate.md#T3) |
 | [R4](../L2_specs/granularity.md#R4) | [T4](../L2_designs/codifier-escalate.md#T4) |
 | [R5](../L2_specs/granularity.md#R5) | [T5](../L2_designs/codifier-escalate.md#T5) |
+| [R6](../L2_specs/granularity.md#R6) | [T6](../L2_designs/codifier-escalate.md#T6) |
 
 ## Decisions
+- [条項は種別を持たない](../L4_decisions/no-kind-attribute.md)
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
 - [粒度は choice / convention / principle の三段とする](../L4_decisions/three-granularities.md)
 - [粒度が上がるほど記載内容が増える](../L4_decisions/content-grows-with-granularity.md)

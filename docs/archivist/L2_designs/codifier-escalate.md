@@ -37,6 +37,13 @@
 - Means: checklist
 - 閾値を書いた config.json がある場合と無い場合の両方で呼び、前者が優先され後者が既定値で動くことを見る
 
+<a id="T6"></a>
+
+### T6 粒度と参照のほかに属性を持たせない
+
+- Means: checklist
+- 返る指示に粒度と参照以外の属性が現れず、種別を書き足す指示が出ないことを見る
+
 ## Parts
 
 | target_name | target_file | IN | OUT |

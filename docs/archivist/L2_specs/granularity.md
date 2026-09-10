@@ -40,6 +40,14 @@
 - 設定は `docs/codifier/config.json` に置く
 - 設定が無いときは既定値で動く
 
+<a id="R6"></a>
+
+### R6 条項が持つ属性を粒度と参照の二つに限る
+
+- 種別の欄を置かない。覆しにくさや取り決めかどうかを記録しない
+- 粒度は条項自身の属性で、他の条項を指さない
+- 他の条項を指すのは参照だけとする
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -49,6 +57,7 @@
 | 3 | [欄の増減](#V3) | [R3](#R3) |
 | 4 | [降格しない](#V4) | [R4](#R4) |
 | 5 | [閾値の設定](#V5) | [R5](#R5) |
+| 6 | [属性の数](#V6) | [R6](#R6) |
 
 <a id="V1"></a>
 
@@ -87,6 +96,13 @@
 - Means: checklist
 - 閾値を変えて同じ入力を処理し、粒度の分布が変わることを見る
 
+<a id="V6"></a>
+
+### V6 属性の数
+
+- Means: checklist
+- 条項を一枚書き出し、粒度と参照のほかに属性が現れないことを見る
+
 ## Decisions
 - [粒度は被参照数で決まる](../L4_decisions/granularity-from-reference-count.md)
 - [条項は発効時刻を欄として持つ](../L4_decisions/article-holds-timecode.md)
@@ -95,16 +111,19 @@
 - [エスカレーションは不可逆とする](../L4_decisions/escalation-is-irreversible.md)
 - [エスカレーションの閾値は利用者が決める](../L4_decisions/thresholds-are-configurable.md)
 - [設定は `docs/codifier/config.json` に置く](../L4_decisions/config-in-output-dir.md)
+- [条項は種別を持たない](../L4_decisions/no-kind-attribute.md)
 
 ## References
 
 ### Structures
 
 - [granularity-ladder](../L3_structures/granularity-ladder.md)
+- [article-attributes](../L3_structures/article-attributes.md)
 
 ### Terms
 
 - [granularity](../L3_terms/granularity.md)
+- [reference](../L3_terms/reference.md)
 - [escalation](../L3_terms/escalation.md)
 - [statement](../L3_terms/statement.md)
 - [rationale](../L3_terms/rationale.md)
